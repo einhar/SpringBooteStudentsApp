@@ -31,12 +31,12 @@ public class FakeStudentDaoImpl implements StudentDao {
 
     @Override
     public Student getStudentById(int id) {
-        return this.students.get(id);
+        return students.get(id);
     }
 
     @Override
     public void deleteStudentById(int id) {
-        this.students.remove(id);
+        students.remove(id);
         System.out.println("You have just removed student with id: " + id + ".");
     }
 
